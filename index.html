@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hi Baccha… My Love 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="heartsCanvas"></canvas>
+  <canvas id="petalsCanvas"></canvas>
+
+  <!-- Greeting / anger check screen -->
+  <div id="intro" class="screen">
+    <div class="hero-heart">🩷</div>
+    <h1 class="intro-title">Hi baccha… 🌸</h1>
+    <p class="intro-sub">Are you still angry at me?</p>
+    <div class="btn-row">
+      <button id="angryYes" class="btn yes">Yes 😤</button>
+      <button id="angryNo" class="btn no">No 🥺</button>
+    </div>
+    <p id="wrongMsg" class="wrong-msg hidden">Wrong option! 🙈 I'm very sure you pressed the wrong one… try again 🥺</p>
+  </div>
+
+  <!-- Apology screen -->
+  <div id="apology" class="screen hidden">
+    <div class="envelope-open">💌</div>
+    <h1 class="card-title">I am sorry…</h1>
+    <div id="apologyText" class="letter"></div>
+    <button id="planBtn" class="btn primary hidden">I have something planned… 💝</button>
+  </div>
+
+  <!-- Itinerary screen -->
+  <div id="itinerary" class="screen hidden">
+    <h1 class="card-title">Today's Itinerary 🗓️</h1>
+    <p class="question-sub">Mera baccha! Here's our day together…</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">🌸</div>
+        <div class="timeline-card">
+          <h3>Sundar Nursery — Teej Festival</h3>
+          <ul>
+            <li>🌷 I want to attend the Teej festival event with you</li>
+            <li>🤝 Hold your hand the whole time</li>
+            <li>👀 And just keep looking at you while you smile</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">🍛</div>
+        <div class="timeline-card">
+          <h3>Lunch — Karnataka Food Center</h3>
+          <ul>
+            <li>🥞 Eat musur masala dosa</li>
+            <li>🍥 And your favourite idli vada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="final-message">
+      Just say the word, baccha, and today is all yours. 💗
+    </div>
+    <div class="big-heart">🩷</div>
+    <button id="restartBtn" class="btn ghost">Replay 💫</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
